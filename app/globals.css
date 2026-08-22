@@ -5,8 +5,8 @@
   --foreground: #171717;
   --navy: #12151c;
   --navy-2: #1a1e28;
-  --gold: #f2b705;
-  --gold-2: #f7c928;
+  --gold: #f97316;
+  --gold-2: #ea580c;
 }
 
 @theme inline {
@@ -29,4 +29,3 @@ body {
 .eyebrow {
   letter-spacing: 0.14em;
 }
-

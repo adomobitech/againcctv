@@ -1,31 +1,29 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { heroFeatures } from "@/data/siteData";
 import { Icon } from "./Icons";
 import CameraIllustration from "./CameraIllustration";
 
-const containerVariants: Variants = {
+// Staggered animation ke variants (Ek ke baad ek elements appear honge)
+const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
+      staggerChildren: 0.15, // Har child element 0.15s ke gap pe aayega
       delayChildren: 0.2,
     },
   },
 };
 
-const itemVariants: Variants = {
+// Har individual element ka niche se upar aane ka effect
+const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 70,
-      damping: 15,
-    },
+    transition: { type: "spring", stiffness: 70, damping: 15 },
   },
 };
 
@@ -42,7 +40,8 @@ export default function Hero() {
       />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-center py-16 lg:py-20">
-        {/* Left Side */}
+        
+        {/* Left Side Content - Animated with containerVariants */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -73,10 +72,7 @@ export default function Hero() {
             High Quality | Best Pricing | Expert Installation
           </motion.p>
 
-          <motion.div
-            variants={itemVariants}
-            className="flex flex-wrap items-center gap-6 mb-10"
-          >
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-6 mb-10">
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -85,7 +81,6 @@ export default function Hero() {
             >
               Explore Services →
             </motion.a>
-
             <motion.a
               whileHover={{ scale: 1.05, opacity: 0.8 }}
               whileTap={{ scale: 0.95 }}
@@ -99,64 +94,44 @@ export default function Hero() {
             </motion.a>
           </motion.div>
 
-          {/* Hero Features */}
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
-          >
+          {/* Hero Features - Sliding in from the left */}
+          <motion.div variants={itemVariants} className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {heroFeatures.map((f, i) => (
               <motion.div
                 key={f.label}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{
-                  delay: 0.6 + i * 0.1,
-                  type: "spring",
-                  stiffness: 50,
-                }}
+                transition={{ delay: 0.6 + i * 0.1, type: "spring", stiffness: 50 }}
                 className="flex items-center gap-2 text-white"
               >
-                <Icon
-                  name={f.icon}
-                  className="w-6 h-6 text-gold shrink-0"
-                />
-                <span className="text-xs font-medium leading-tight">
-                  {f.label}
-                </span>
+                <Icon name={f.icon} className="w-6 h-6 text-gold shrink-0" />
+                <span className="text-xs font-medium leading-tight">{f.label}</span>
               </motion.div>
             ))}
           </motion.div>
         </motion.div>
 
-        {/* Right Side */}
+        {/* Right Side Image/Illustration */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative flex items-center justify-center"
         >
-          {/* Glow */}
+          {/* Glowing background behind the camera (Pulsing Effect) */}
           <motion.div
             animate={{
               scale: [1, 1.1, 1],
               opacity: [0.5, 0.8, 0.5],
             }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="absolute w-72 h-72 bg-gold/10 rounded-full blur-3xl"
           />
 
-          {/* Camera */}
+          {/* Camera Illustration (Smooth Floating Effect) */}
           <motion.div
             animate={{ y: [0, -15, 0] }}
-            transition={{
-              duration: 5,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="w-full max-w-xl relative drop-shadow-2xl z-10"
           >
             <CameraIllustration className="w-full" />

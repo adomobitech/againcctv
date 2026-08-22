@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { testimonials } from "@/data/siteData";
 import { Icon } from "./Icons";
 
@@ -8,22 +11,43 @@ function initials(name: string) {
     .join("");
 }
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 50, damping: 12 } },
+};
+
 export default function Testimonials() {
   return (
     <section className="bg-gray-50 py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="text-center mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
           <span className="text-gold text-xs font-bold tracking-[0.2em] eyebrow">TESTIMONIALS</span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy mt-2">
             What Our Clients Say
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+          }}
+          className="grid md:grid-cols-3 gap-6"
+        >
           {testimonials.map((t) => (
-            <div
+            <motion.div
+              variants={cardVariants}
+              whileHover={{ y: -5, boxShadow: "0px 15px 30px rgba(0,0,0,0.05)" }}
               key={t.name}
-              className="bg-white rounded-lg p-7 shadow-sm border border-gray-100 relative"
+              className="bg-white rounded-lg p-7 shadow-sm border border-gray-100 relative transition-all"
             >
               <Icon name="quote" className="w-7 h-7 text-gold/40 mb-3" />
               <p className="text-sm text-gray-600 leading-relaxed mb-6">{t.quote}</p>
@@ -36,9 +60,9 @@ export default function Testimonials() {
                   <p className="text-xs text-gray-400">{t.role}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
