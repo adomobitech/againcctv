@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { siteInfo } from "@/data/siteData";
 
 export default function FloatingContact() {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* WhatsApp Floating Button - Direct Chat Link */}
       <motion.a
-        href="https://wa.me/919821903403"
+        href={`https://wa.me/${siteInfo.whatsapp}`}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
@@ -32,7 +33,7 @@ export default function FloatingContact() {
 
       {/* Call Floating Button - Direct Call Link */}
       <motion.a
-        href="tel:9821903403"
+        href="tel:821903403"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.2 }}

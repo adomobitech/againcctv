@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { testimonials } from "@/data/siteData";
 import { Icon } from "./Icons";
 
@@ -11,11 +11,21 @@ function initials(name: string) {
     .join("");
 }
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 50, damping: 12 } },
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      damping: 12,
+    },
+  },
 };
-
 export default function Testimonials() {
   return (
     <section className="bg-gray-50 py-16 lg:py-20">

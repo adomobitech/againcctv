@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
@@ -21,7 +22,7 @@ export default function PrivacyPolicy() {
           Privacy Policy
         </h1>
         <p className="text-gray-400 text-sm mb-10 pb-6 border-b border-gray-100">
-          Last updated: August 2026 | B.S. CCTV Networking Solution
+          Last updated: August 2026 | CCTV Security Solutions
         </p>
 
         <div className="space-y-8 text-gray-600 leading-relaxed text-sm md:text-base">
@@ -30,7 +31,7 @@ export default function PrivacyPolicy() {
               <span className="w-2 h-2 rounded-full bg-orange-500"></span> 1. Information We Collect
             </h2>
             <p>
-              At B.S. CCTV Networking Solution, we collect information you provide directly when requesting a security consultation, booking an installation service, or communicating via phone/WhatsApp. This includes your name, contact number, service address, and specific surveillance requirements.
+              At CCTV Security Solutions, we collect information you provide directly when requesting a security consultation, booking an installation service, or communicating via phone/WhatsApp. This includes your name, contact number, service address, and specific surveillance requirements.
             </p>
           </section>
 
@@ -57,19 +58,19 @@ export default function PrivacyPolicy() {
               <span className="w-2 h-2 rounded-full bg-orange-500"></span> 4. Direct Inquiries
             </h2>
             <p>
-              For any questions regarding our privacy practices or data handling, you can contact us directly at <span className="font-semibold text-[#12151c]">9821903403</span>.
+              For any questions regarding our privacy practices or data handling, you can contact us directly at <span className="font-semibold text-[#12151c]">821903403</span>.
             </p>
           </section>
         </div>
 
         <div className="mt-12 pt-6 border-t border-gray-100 flex items-center justify-between">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 bg-[#12151c] hover:bg-orange-500 text-white font-bold text-sm px-7 py-3 rounded-xl transition-all shadow-md"
           >
             ← Back to Home
-          </a>
-          <span className="text-xs text-gray-400">B.S. CCTV Networking Solution</span>
+          </Link>
+          <span className="text-xs text-gray-400">CCTV Security Solutions</span>
         </div>
       </motion.div>
     </main>

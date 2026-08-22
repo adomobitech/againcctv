@@ -1,0 +1,8 @@
+<svg width="360" height="96" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="96" height="96" rx="24" fill="#12151C"/>
+  <path d="M22 42L46 31L74 42V63C74 70 62 79 48 84C34 79 22 70 22 63V42Z" fill="#F97316"/>
+  <path d="M35 53H61M40 53V47H56V53M47 53V67M40 67H56" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48" cy="59" r="4" fill="#12151C"/>
+  <text x="112" y="43" fill="#12151C" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800" letter-spacing="-.5">CCTV SECURITY</text>
+  <text x="113" y="68" fill="#F97316" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" letter-spacing="3">SOLUTIONS</text>
+</svg>

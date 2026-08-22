@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 import { footerLinks, siteInfo } from "@/data/siteData";
 import { ContactIcon, SocialIcon } from "./Icons";
 
@@ -25,7 +27,7 @@ export default function Footer() {
             </p>
           </div>
           <motion.a
-            href="https://wa.me/919821903403"
+            href={`https://wa.me/${siteInfo.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -40,13 +42,8 @@ export default function Footer() {
       {/* Links & Branding */}
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <a href="#home" className="flex items-center gap-2 mb-4">
-            <span className="w-9 h-9 rounded-full bg-orange-500 flex items-center justify-center text-navy font-bold">
-              BS
-            </span>
-            <span className="font-extrabold text-white text-sm">
-              B.S. CCTV <span className="text-orange-500 block text-[10px]">Networking Solution</span>
-            </span>
+          <a href="#home" className="inline-flex mb-4 bg-white rounded-lg px-3 py-2">
+            <Image src="/cctv-security-solutions-logo.svg" alt="CCTV Security Solutions" width={180} height={48} className="w-40 h-auto" />
           </a>
           <p className="text-sm text-gray-400 leading-relaxed mb-4">
             We provide complete security solutions with best quality products and expert installation services.
@@ -89,8 +86,14 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-x-4 text-sm">
             <ul className="space-y-2">
               {footerLinks.citiesLeft.map((c) => (
-                <li key={c} className="hover:text-orange-500 transition-colors cursor-default">
-                  {c}
+                <li key={c}>
+                  {c === "Sikanderpur" ? (
+                    <Link href="/cities/sikanderpur" className="hover:text-orange-500 transition-colors">
+                      {c}
+                    </Link>
+                  ) : (
+                    <span className="hover:text-orange-500 transition-colors cursor-default">{c}</span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -136,8 +139,8 @@ export default function Footer() {
               </svg>
               <span>
                 Call:{" "}
-                <a href="tel:9821903403" className="hover:text-orange-500 font-semibold transition-colors">
-                  9821903403
+                <a href="tel:821903403" className="hover:text-orange-500 font-semibold transition-colors">
+                  {siteInfo.phone}
                 </a>
               </span>
             </p>
@@ -150,12 +153,12 @@ export default function Footer() {
               <span>
                 WhatsApp:{" "}
                 <a
-                  href="https://wa.me/919821903403"
+                  href={`https://wa.me/${siteInfo.whatsapp}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:underline font-semibold"
                 >
-                  9821903403
+                  {siteInfo.phone}
                 </a>
               </span>
             </p>
@@ -168,7 +171,7 @@ export default function Footer() {
           <span>
             {siteInfo.email}
             <br />
-            www.bscctvnetworking.com
+            www.cctvsecuritysolutions.com
           </span>
         </div>
       </motion.div>
@@ -179,7 +182,7 @@ export default function Footer() {
           
           {/* Copyright text in center */}
           <p className="text-gray-400 font-medium">
-            © 2026 <span className="text-white font-semibold">B.S. CCTV Networking Solution</span>. All Rights Reserved.
+            © 2026 <span className="text-white font-semibold">CCTV Security Solutions</span>. All Rights Reserved.
           </p>
 
           {/* Privacy & Terms links below in center */}
@@ -198,6 +201,16 @@ export default function Footer() {
               Terms & Conditions
             </a>
           </div>
+
+          <a
+            href="https://weoads.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition-colors hover:border-orange-500 hover:bg-orange-500/10"
+          >
+            <span className="text-orange-500">✦</span>
+            Designed &amp; Managed by <span className="text-orange-500">Weoads.com</span>
+          </a>
 
         </div>
       </div>

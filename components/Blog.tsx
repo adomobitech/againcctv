@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Icon } from "./Icons";
 
 const blogPosts = [
@@ -30,7 +30,7 @@ const blogPosts = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -38,7 +38,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 60, damping: 15 } },
 };
@@ -63,7 +63,7 @@ export default function Blog() {
             Latest News & Articles
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto mt-3 text-sm md:text-base">
-            Stay updated with expert security advice, technology trends, and smart networking guides from B.S. CCTV Networking Solution.
+            Stay updated with expert security advice, technology trends, and smart networking guides from CCTV Security Solutions.
           </p>
         </motion.div>
 

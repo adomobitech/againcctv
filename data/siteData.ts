@@ -1,9 +1,10 @@
 export const siteInfo = {
-  name: "Best CCTV",
-  nameAccent: "Experts",
+  name: "CCTV Security",
+  nameAccent: "Solutions",
   location: "Serving in Delhi NCR",
-  phone: "+91 98765 43210",
-  email: "info@bestcctvexperts.com",
+  phone: "+91 821903403",
+  whatsapp: "91821903403",
+  email: "info@cctvsecuritysolutions.com",
   hours: "Mon - Sat: 9:00 AM - 7:00 PM",
   address: "A-123, Malviya Nagar, New Delhi - 110017",
 };
@@ -101,7 +102,7 @@ export const testimonials = [
     name: "Rahul Sharma",
     role: "Business Owner",
     quote:
-      "Best CCTV Experts installed a complete system at our office. Excellent quality and neat work.",
+      "CCTV Security Solutions installed a complete system at our office. Excellent quality and neat work.",
   },
   {
     name: "Pooja Verma",
@@ -113,7 +114,7 @@ export const testimonials = [
     name: "Amit Yadav",
     role: "Office Manager",
     quote:
-      "We take AMC from Best CCTV Experts. Their support is excellent.",
+      "We take AMC from CCTV Security Solutions. Their support is excellent.",
   },
 ];
 
@@ -136,6 +137,7 @@ export const footerLinks = {
     "Networking Solutions",
   ],
   citiesLeft: [
+    "Sikanderpur",
     "Netaraval",
     "Saket",
     "Malviyanagar",

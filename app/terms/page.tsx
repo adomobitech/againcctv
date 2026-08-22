@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function TermsAndConditions() {
   return (
@@ -21,7 +22,7 @@ export default function TermsAndConditions() {
           Terms & Conditions
         </h1>
         <p className="text-gray-400 text-sm mb-10 pb-6 border-b border-gray-100">
-          Last updated: August 2026 | B.S. CCTV Networking Solution
+          Last updated: August 2026 | CCTV Security Solutions
         </p>
 
         <div className="space-y-8 text-gray-600 leading-relaxed text-sm md:text-base">
@@ -30,7 +31,7 @@ export default function TermsAndConditions() {
               <span className="w-2 h-2 rounded-full bg-orange-500"></span> 1. Acceptance of Terms
             </h2>
             <p>
-              By accessing our website, booking an inspection, or hiring B.S. CCTV Networking Solution for installations, you agree to be bound by these Terms and Conditions. Please review them carefully before proceeding with any service.
+              By accessing our website, booking an inspection, or hiring CCTV Security Solutions for installations, you agree to be bound by these Terms and Conditions. Please review them carefully before proceeding with any service.
             </p>
           </section>
 
@@ -48,7 +49,7 @@ export default function TermsAndConditions() {
               <span className="w-2 h-2 rounded-full bg-orange-500"></span> 3. Warranties & Hardware
             </h2>
             <p>
-              Hardware warranties and replacement policies are governed strictly by the respective original manufacturers. B.S. CCTV Networking Solution provides professional workmanship guarantees during installation periods.
+              Hardware warranties and replacement policies are governed strictly by the respective original manufacturers. CCTV Security Solutions provides professional workmanship guarantees during installation periods.
             </p>
           </section>
 
@@ -57,19 +58,19 @@ export default function TermsAndConditions() {
               <span className="w-2 h-2 rounded-full bg-orange-500"></span> 4. Limitation of Liability
             </h2>
             <p>
-              B.S. CCTV Networking Solution shall not be held liable for indirect or unforeseen technical malfunctions outside our structured maintenance scopes, or network provider downtimes affecting remote camera streaming.
+              CCTV Security Solutions shall not be held liable for indirect or unforeseen technical malfunctions outside our structured maintenance scopes, or network provider downtimes affecting remote camera streaming.
             </p>
           </section>
         </div>
 
         <div className="mt-12 pt-6 border-t border-gray-100 flex items-center justify-between">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 bg-[#12151c] hover:bg-orange-500 text-white font-bold text-sm px-7 py-3 rounded-xl transition-all shadow-md"
           >
             ← Back to Home
-          </a>
-          <span className="text-xs text-gray-400">B.S. CCTV Networking Solution</span>
+          </Link>
+          <span className="text-xs text-gray-400">CCTV Security Solutions</span>
         </div>
       </motion.div>
     </main>

@@ -19,7 +19,7 @@ const aboutTabs = [
   },
   {
     id: "why-us",
-    title: "The B.S. Advantage",
+    title: "Why Choose Us",
     icon: "quality",
     content: "We combine top-tier hardware quality with professional installation, expert post-installation support, and budget-friendly pricing packages across all our service regions.",
   },
@@ -45,7 +45,7 @@ export default function About() {
             WHO WE ARE
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#12151c] mt-2">
-            About B.S. CCTV Networking Solution
+            About CCTV Security Solutions
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto mt-3 text-sm md:text-base">
             Securing your premises with advanced surveillance tech, professional engineering, and uncompromised trust.

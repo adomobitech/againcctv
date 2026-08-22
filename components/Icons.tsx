@@ -1,5 +1,3 @@
-type IconProps = { className?: string };
-
 export function Icon({ name, className = "w-7 h-7" }: { name: string; className?: string }) {
   const props = { className, fill: "none", stroke: "currentColor", strokeWidth: 1.6, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, viewBox: "0 0 24 24" };
 

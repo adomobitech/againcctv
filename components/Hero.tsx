@@ -1,12 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { heroFeatures } from "@/data/siteData";
 import { Icon } from "./Icons";
 import CameraIllustration from "./CameraIllustration";
 
 // Staggered animation ke variants (Ek ke baad ek elements appear honge)
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -18,7 +18,7 @@ const containerVariants = {
 };
 
 // Har individual element ka niche se upar aane ka effect
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
