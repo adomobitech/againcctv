@@ -33,7 +33,7 @@ export default function FloatingContact() {
 
       {/* Call Floating Button - Direct Call Link */}
       <motion.a
-        href="tel:821903403"
+        href="tel:9821903403"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.2 }}

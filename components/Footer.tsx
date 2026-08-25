@@ -139,7 +139,7 @@ export default function Footer() {
               </svg>
               <span>
                 Call:{" "}
-                <a href="tel:821903403" className="hover:text-orange-500 font-semibold transition-colors">
+                <a href="tel:9821903403" className="hover:text-orange-500 font-semibold transition-colors">
                   {siteInfo.phone}
                 </a>
               </span>

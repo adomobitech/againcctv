@@ -28,7 +28,7 @@ export default function Header() {
 
           {/* Call Icon + Number with Pulse Animation */}
           <motion.a
-            href="tel:821903403"
+            href="tel:9821903403"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="flex items-center gap-1.5 text-white hover:text-gold transition-colors font-semibold"
@@ -94,7 +94,7 @@ export default function Header() {
           <a href={`https://wa.me/${siteInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" className="md:hidden w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-lg">
             💬
           </a>
-          <a href="tel:821903403" aria-label="Call CCTV Security Solutions" className="md:hidden w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
+          <a href="tel:9821903403" aria-label="Call CCTV Security Solutions" className="md:hidden w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-lg">
             ☎
           </a>
         <motion.a

@@ -58,7 +58,7 @@ export default function PrivacyPolicy() {
               <span className="w-2 h-2 rounded-full bg-orange-500"></span> 4. Direct Inquiries
             </h2>
             <p>
-              For any questions regarding our privacy practices or data handling, you can contact us directly at <span className="font-semibold text-[#12151c]">821903403</span>.
+              For any questions regarding our privacy practices or data handling, you can contact us directly at <span className="font-semibold text-[#12151c]">9821903403</span>.
             </p>
           </section>
         </div>

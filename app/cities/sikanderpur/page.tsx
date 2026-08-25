@@ -24,7 +24,7 @@ export default function SikanderpurPage() {
             <span className="w-10 h-10 rounded-full bg-gold text-navy flex items-center justify-center font-extrabold">CS</span>
             <span className="font-extrabold leading-tight">CCTV Security <span className="block text-xs text-gold">Solutions</span></span>
           </Link>
-          <a href="tel:821903403" className="text-sm font-bold hover:text-gold transition-colors">Call: 821903403</a>
+          <a href="tel:9821903403" className="text-sm font-bold hover:text-gold transition-colors">Call: 9821903403</a>
         </div>
       </header>
 
@@ -34,8 +34,8 @@ export default function SikanderpurPage() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-white mt-4 leading-tight">CCTV Installation in Sikanderpur</h1>
           <p className="text-gray-300 mt-5 max-w-2xl mx-auto">Reliable surveillance, access control and networking solutions for homes, shops, offices and societies in Sikanderpur.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a href="tel:821903403" className="bg-gold hover:bg-gold-2 text-navy font-bold text-sm px-6 py-3 rounded transition-colors">Get a Free Quote</a>
-            <a href="https://wa.me/91821903403" target="_blank" rel="noopener noreferrer" className="border border-white/40 hover:border-gold text-white font-bold text-sm px-6 py-3 rounded transition-colors">WhatsApp Us</a>
+            <a href="tel:9821903403" className="bg-gold hover:bg-gold-2 text-navy font-bold text-sm px-6 py-3 rounded transition-colors">Get a Free Quote</a>
+            <a href="https://wa.me/9199821903403" target="_blank" rel="noopener noreferrer" className="border border-white/40 hover:border-gold text-white font-bold text-sm px-6 py-3 rounded transition-colors">WhatsApp Us</a>
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function SikanderpurPage() {
         <div className="max-w-5xl mx-auto px-6 py-14 text-center">
           <h2 className="text-3xl font-extrabold">Need CCTV installation in Sikanderpur?</h2>
           <p className="text-gray-600 mt-3">Call us to arrange your free site inspection and consultation.</p>
-          <a href="tel:821903403" className="inline-flex mt-6 bg-navy hover:bg-navy-2 text-white font-bold text-sm px-6 py-3 rounded transition-colors">Call 821903403</a>
+          <a href="tel:9821903403" className="inline-flex mt-6 bg-navy hover:bg-navy-2 text-white font-bold text-sm px-6 py-3 rounded transition-colors">Call 9821903403</a>
         </div>
       </section>
 
